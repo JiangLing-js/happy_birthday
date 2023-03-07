@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Birthday Message</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+  </head>
+  <body>
+    <div class="container">
+      <h1>生日快乐, {{ name }}!</h1>
+      <img src="{{ url_for('static', filename='img/cake.jpg') }}">
+      <p>祝你在{{ month }}月{{ day }}日这天过的开心!</p>
+    </div>
+  </body>
+</html>
+

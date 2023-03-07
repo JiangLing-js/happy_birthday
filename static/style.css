@@ -1,0 +1,71 @@
+body {
+  background-color: #F8B195;
+  font-family: 'Helvetica Neue', sans-serif;
+  text-align: center;
+}
+
+.container {
+  margin-top: 50px;
+  padding: 20px;
+  border-radius: 10px;
+  background-color: #FFF;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+}
+
+h1 {
+  font-size: 48px;
+  margin-bottom: 20px;
+}
+
+img {
+  width: 300px;
+  height: auto;
+  margin-bottom: 20px;
+}
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.animation {
+  animation-name: rotate;
+  animation-duration: 1s;
+  animation-iteration-count: 1;
+  animation-timing-function: linear;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+form label {
+  margin-bottom: 10px;
+}
+
+form input[type="text"],
+form input[type="date"] {
+  padding: 10px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  border: none;
+}
+
+form input[type="submit"] {
+  padding: 10px 20px;
+  background-color: #008CBA;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+form input[type="submit"]:hover {
+  background-color: #005f7f;
+}

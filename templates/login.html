@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Login Page</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+  </head>
+  <body>
+    <h1>请给出你的姓名生日日期:</h1>
+    <form method="POST" action="/login">
+      <label for="name">姓名:</label>
+      <input type="text" name="name" class="animation"><br>
+
+      <label for="birthday">生日:</label>
+      <input type="date" name="birthday" class="animation"><br>
+
+      <input type="submit" value="确认" class="animation">
+    </form>
+  </body>
+</html>
+

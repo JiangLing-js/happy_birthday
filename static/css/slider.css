@@ -1,0 +1,31 @@
+.slider {
+  position: relative;
+  width: 500px;
+  height: 300px;
+  overflow: hidden;
+}
+
+.slider img {
+  position: absolute;
+  left: -500px;
+  opacity: 0;
+  animation: slide-in 1s forwards;
+}
+
+@keyframes slide-in {
+  to {
+    left: 0;
+    opacity: 1;
+  }
+}
+
+@keyframes slide-out {
+  from {
+    left: 0;
+    opacity: 1;
+  }
+  to {
+    left: 500px;
+    opacity: 0;
+  }
+}

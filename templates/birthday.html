@@ -2,14 +2,30 @@
 <html>
   <head>
     <title>Birthday Message</title>
-    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style_2.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/owl.carousel.min.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/owl.theme.default.min.css') }}">
+    <script src="{{ url_for('static', filename='js/jquery.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/owl.carousel.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/my.js') }}"></script>
+
   </head>
-  <body>
+  <body style="background-color: transparent;">
     <div class="container">
       <h1>生日快乐, {{ name }}!</h1>
-      <img src="{{ url_for('static', filename='img/cake.jpg') }}">
+      <div class="owl-carousel">
+        <div><img src="{{ url_for('static', filename='img/img6.jpg') }}"></div>
+        <div><img src="{{ url_for('static', filename='img/img7.jpg') }}"></div>
+        <div><img src="{{ url_for('static', filename='img/img8.jpg') }}"></div>
+      </div>
+
       <p>祝你在{{ month }}月{{ day }}日这天过的开心!</p>
+      <div class="center">
+        <a href="/" class="btn">回到首页</a>
+      </div>
+
     </div>
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
   </body>
 </html>
 
